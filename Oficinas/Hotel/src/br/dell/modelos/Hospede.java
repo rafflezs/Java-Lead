@@ -30,10 +30,8 @@ class Hospede {
 	public String getNome() {
 		return nome;
 	}
-	public void setNome(String nome) throws NomeException {
-		if (validarNome(nome)) {
-			this.nome = nome;
-		}
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	public int getIdade() {
 		return idade;
@@ -48,11 +46,6 @@ class Hospede {
 		this.endereco = endereco;
 	}
 	
-	private Boolean validarNome(String nome) throws NomeException {
-	    String expression = "^[a-zA-Z\\s]+"; 
-	    if(!nome.matches(expression)) 
-	    	throw new NomeException(nome);
-	    return true;
-	}
+
 	
 }
