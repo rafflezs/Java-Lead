@@ -14,7 +14,7 @@ Dado("que hoje é {string}") do |dia|
 end 
   
   Quando("eu pergunto qual é a promoção do dia") do 
-    @valor_obtido = Loja.new.promoçao_do_dia(@hoje) 
+    @valor_obtido = Loja.new.promoçao_do_dia(@hoje)  
   end 
   
   Então("a resposta deve ser {string}") do |promoçao_esperada| 
